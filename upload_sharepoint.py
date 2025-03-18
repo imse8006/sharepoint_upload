@@ -48,7 +48,7 @@ def upload_to_sharepoint(site_url, client_id, client_secret, local_file_path, ta
 
 
 if __name__ == "__main__":
-    # Generate the current date in YYYYMMDD format
+    # generates the date in the YYYYMMDD format
     today = datetime.datetime.now().strftime('%Y%m%d')
     original_file_name = os.path.basename(LOCAL_FILE_PATH).replace(".xlsx", ".xlsb")
     converted_file_name = f"{today}_{original_file_name}"
