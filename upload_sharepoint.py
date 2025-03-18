@@ -32,6 +32,7 @@ def upload_to_sharepoint(site_url, client_id, client_secret, local_file_path, ta
         ctx.execute_query()
         print("Authentication successful")
 
+
         if not os.path.exists(local_file_path):
             raise FileNotFoundError(f"The file '{local_file_path}' does not exist.")
 
